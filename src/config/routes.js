@@ -1,4 +1,4 @@
-import Home from '../pages/Home.jsx';
+import HomePage from '../components/pages/HomePage.jsx';
 import Recent from '../pages/Recent.jsx';
 import Shared from '../pages/Shared.jsx';
 import Trash from '../pages/Trash.jsx';
@@ -9,7 +9,7 @@ export const routes = {
     label: 'My Files',
     path: '/',
     icon: 'Folder',
-    component: Home
+    component: HomePage
   },
   recent: {
     id: 'recent',
