@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import react-toastify CSS */
+@import 'react-toastify/dist/ReactToastify.css';
+
+/* Ensure scrollbars are visible */
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Prevent horizontal overflow */
+* {
+  max-width: 100%;
+}
+
+/* Main content areas must allow scroll */
+.main-content {
+  overflow-y: auto;
+  height: 100vh;
+}
+
+@layer utilities {
+  /* Only use scrollbar-hide for specific UI elements, never main content */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Custom gradient background for buttons */
+.gradient-primary {
+  background: linear-gradient(135deg, #5B68E8 0%, #8B95F7 100%);
+}
+
+.gradient-accent {
+  background: linear-gradient(135deg, #3BD4AE 0%, #4AE5C1 100%);
+}
+
+/* Drop zone styles */
+.drop-zone-active {
+  background: linear-gradient(135deg, rgba(91, 104, 232, 0.05) 0%, rgba(139, 149, 247, 0.05) 100%);
+  border: 2px dashed #5B68E8;
+}
