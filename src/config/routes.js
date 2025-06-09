@@ -1,7 +1,7 @@
-import Home from '../pages/Home';
-import Recent from '../pages/Recent';
-import Shared from '../pages/Shared';
-import Trash from '../pages/Trash';
+import Home from '../pages/Home.jsx';
+import Recent from '../pages/Recent.jsx';
+import Shared from '../pages/Shared.jsx';
+import Trash from '../pages/Trash.jsx';
 
 export const routes = {
   myFiles: {
