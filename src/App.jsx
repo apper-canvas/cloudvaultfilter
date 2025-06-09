@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import Layout from './components/Layout';
-import Home from './pages/Home';
+import HomePage from './components/pages/HomePage';
 import Recent from './pages/Recent';
 import Shared from './pages/Shared';
 import Trash from './pages/Trash';
@@ -13,8 +13,8 @@ function App() {
       <div className="h-screen flex flex-col overflow-hidden bg-background">
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="files/*" element={<Home />} />
+<Route index element={<HomePage />} />
+            <Route path="files/*" element={<HomePage />} />
             <Route path="recent" element={<Recent />} />
             <Route path="shared" element={<Shared />} />
             <Route path="trash" element={<Trash />} />
